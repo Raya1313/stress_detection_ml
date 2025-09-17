@@ -15,7 +15,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 from imblearn.over_sampling import RandomOverSampler
 #%%
-data=pd.read_csv('Stress_Dataset.csv')
+data=pd.read_csv('../data/Stress_Dataset.csv')
 encoder = LabelEncoder()
 data['Which type of stress do you primarily experience?']=encoder.fit_transform(data['Which type of stress do you primarily experience?'])
 x_train=data.iloc[:,:-1]

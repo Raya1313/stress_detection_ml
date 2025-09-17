@@ -15,7 +15,6 @@ from graphviz import *
 warnings.filterwarnings('ignore')
 #%%
 data=pd.read_csv('../data/StressLevelDataset.csv')
-data_sd=pd.read_csv('StressLevelDataset.csv')
 X=data.iloc[:,:20]
 Y=data.iloc[:,20].values
 ros=RandomOverSampler(random_state=42)
