@@ -94,7 +94,7 @@ for i in range(15):
     plt.savefig(f'{output_dir}/tree{i+1}.png',dpi=300,bbox_inches='tight')
     plt.close()
 #%%
-output_dir='../stress level output/features importance'
+output_dir= '../stress level output/features importance'
 os.makedirs(output_dir, exist_ok=True)
 models=[(model,'base'),(model_resampled,'Oversampled'),(model_rus,'Undersampled')]
 for model,name in models:
